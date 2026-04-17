@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <form id="sForm" class="flex justify-space-around align-center">
+                <label><input placeholder="Enter your location" class="inputBox" name="city" type="search"
+                        required></label>
+                <button type="button" title="search" class="fa-solid fa-magnifying-glass" id="sBtn"></button>
+            </form>
+        </header>
+        <div class="weather-body">
+            <h3 class="about"></h3>
+            <p class="day">(Day)</p>
+            <img src="" alt="Weather Image" class="weather-img">
+            <div class="weather-box">
+                <p class="temp"> 0 <sup>°C</sup></p>
+                <p class="desc">Light Rain</p>
+            </div>
+            <div class="row ">
+                <div class=" col-4 col-m-6   flex align-center">
+                    <i class="fa-solid fa-droplet "></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class=" col-4  col-m-6 flex align-center">
+                    <i class="fa-solid fa-wind "></i>
+                    <div class="text">
+                        <span id="wind-speed">3.09Kp/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class=" col-4  col-m-6 flex align-center">
+                    <i class="fa-solid fa-temperature-quarter"></i>
+                    <div class="text">
+                        <span id="feel-like">24 <sup>°C</sup></span>
+                        <p>Feels like</p>
+                    </div>
+                </div>
+                <div class=" col-4 col-m-6  flex align-center">
+                    <i class="fa-solid fa-diamond-turn-right"></i>
+                    <div class="text">
+                        <span id="wind-dir">SW</span>
+                        <p>Wind Direction</p>
+                    </div>
+                </div>
+                <div class="col-4 col-m-6 flex align-center">
+                    <i class="fa-solid fa-sun"></i>
+                    <div class="text">
+                        <span id="uv">0</span>
+                        <p>UV</p>
+                    </div>
+                </div>
+                <div class="col-4 col-m-6 flex align-center">
+                    <i class="fa-solid fa-eye"></i>
+                    <div class="text">
+                        <span id="vis-in-km">12345</span>
+                        <p>Visiblity in KM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="last-update"></p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
