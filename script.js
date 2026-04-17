@@ -1,4 +1,3 @@
-
 const inputBox = document.querySelector(".inputBox");
 const form = document.querySelector("#sForm");
 const weatherImg = document.querySelector(".weather-img");
